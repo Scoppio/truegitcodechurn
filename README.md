@@ -28,6 +28,12 @@ Optional arguments:
 - **--csv**                 the resulting output is printed to the terminal formatted as CSV
 - **-h, --h, --help**       show this help message and exit
 
+
+## Usage example without specifying anything other than the folder of the repo
+```bash
+python ./gitcodechurn.py /Users/myname/myrepo 
+```
+
 ## Usage example with a specific author
 ```bash
 python ./gitcodechurn.py /Users/myname/myrepo --after 2018-11-29 --before 2019-03-01 --author "an author"
@@ -35,13 +41,7 @@ python ./gitcodechurn.py /Users/myname/myrepo --after 2018-11-29 --before 2019-0
 
 ## Usage example without specifying an author
 ```bash
-python ./gitcodechurn.py /Users/myname/myrepo --after 2018-11-29 --before "2019-03-01  -exdir excluded-directory
+python ./gitcodechurn.py /Users/myname/myrepo --after 2018-11-29 --before 2019-03-01  -exdir excluded-directory
 ```
-
-## Usage example without specifying anything other than the folder of the repo
-```bash
-python ./gitcodechurn.py /Users/myname/myrepo 
-```
-
 
 Outputs can be used as part of a pipeline (not included) that generates bar charts for reports.
