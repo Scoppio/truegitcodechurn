@@ -28,7 +28,16 @@ class CsvExporter:
                 added += line_diff_stats.get("lines_added")
                 removed += line_diff_stats.get("lines_removed")
                 number_of_changes += 1
-            cls.display_file_metrics_row(file_name, "TOTAL", {"lines_added": added, "lines_removed": removed, "number_of_changes": number_of_changes})
+            
+            cls.display_file_metrics_row(
+                file_name, 
+                "TOTAL", 
+                {
+                    "lines_added": added, 
+                    "lines_removed": removed, 
+                    "number_of_changes": number_of_changes
+                }
+            )
     
     @classmethod
     def display_file_metrics_header(cls):
@@ -73,7 +82,16 @@ class TerminalExporter:
                 added += line_diff_stats.get("lines_added")
                 removed += line_diff_stats.get("lines_removed")
                 number_of_changes += 1
-            cls.display_file_metrics_row(file_name, "TOTAL", {"lines_added": added, "lines_removed": removed, "number_of_changes": number_of_changes})
+            
+            cls.display_file_metrics_row(
+                file_name, 
+                "TOTAL", 
+                {
+                    "lines_added": added, 
+                    "lines_removed": removed, 
+                    "number_of_changes": number_of_changes
+                }
+            )
 
     @classmethod
     def display_file_metrics_header(cls):
